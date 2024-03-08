@@ -177,7 +177,7 @@ html {
 }
 
 body {
-  background: #2e3842;
+  background: #000000;
 }
 
 body.is-preload *,
@@ -2050,7 +2050,7 @@ input[type="radio"] + label:before {
 
 input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
-  background: #2e3842;
+  background: #000000;
   color: #fff;
   content: "\f00c";
 }
@@ -2584,7 +2584,7 @@ input[type="reset"].primary,
 input[type="button"].primary,
 button.primary,
 .button.primary {
-  background-color: #ed4933;
+  background-color: #5da1bb;
   box-shadow: none !important;
   color: #ffffff !important;
 }
@@ -2795,15 +2795,15 @@ button:disabled,
 }
 
 .spotlight:nth-child(1) {
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .spotlight:nth-child(2) {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .spotlight:nth-child(3) {
-  background-color: rgba(0, 0, 0, 0.225);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .spotlight:nth-child(4) {
@@ -3065,11 +3065,11 @@ button:disabled,
 }
 
 .wrapper.style2 {
-  background-color: #2e3842;
+  background-color: #000000;
 }
 
 .wrapper.style3 {
-  background-color: #3d3d3d;
+  background-color: #1a1a1a;
   color: #d3d4e4;
 }
 
@@ -3132,7 +3132,7 @@ button:disabled,
 
 .wrapper.style3 select option {
   color: #ffffff;
-  background: #3d3d3d;
+  background: #1a1a1a;
 }
 
 .wrapper.style3 input[type="checkbox"] + label,
@@ -3148,7 +3148,7 @@ button:disabled,
 .wrapper.style3 input[type="checkbox"]:checked + label:before,
 .wrapper.style3 input[type="radio"]:checked + label:before {
   background: #ffffff;
-  color: #3d3d3d;
+  color: #1a1a1a;
 }
 
 .wrapper.style3 ::-webkit-input-placeholder {
@@ -3239,13 +3239,13 @@ button:disabled,
 }
 
 .wrapper.style5 {
-  background-color: #ffffff;
-  color: #4e4852;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .wrapper.style5 strong,
 .wrapper.style5 b {
-  color: #2e3842;
+  color: #000000;
 }
 
 .wrapper.style5 h2,
@@ -3253,7 +3253,7 @@ button:disabled,
 .wrapper.style5 h4,
 .wrapper.style5 h5,
 .wrapper.style5 h6 {
-  color: #2e3842;
+  color: #ffffff;
 }
 
 .wrapper.style5 hr {
@@ -3285,7 +3285,7 @@ button:disabled,
 }
 
 .wrapper.style5 label {
-  color: #2e3842;
+  color: #000000;
 }
 
 .wrapper.style5 input[type="text"],
@@ -3301,7 +3301,7 @@ button:disabled,
 }
 
 .wrapper.style5 select option {
-  color: #2e3842;
+  color: #000000;
   background: #ffffff;
 }
 
@@ -3317,7 +3317,7 @@ button:disabled,
 
 .wrapper.style5 input[type="checkbox"]:checked + label:before,
 .wrapper.style5 input[type="radio"]:checked + label:before {
-  background: #2e3842;
+  background: #000000;
   color: #ffffff;
 }
 
@@ -3358,7 +3358,7 @@ button:disabled,
 }
 
 .wrapper.style5 table th {
-  color: #2e3842;
+  color: #000000;
 }
 
 .wrapper.style5 table thead {
@@ -3379,7 +3379,7 @@ button:disabled,
 .wrapper.style5 button,
 .wrapper.style5 .button {
   box-shadow: inset 0 0 0 2px #dfdfdf;
-  color: #2e3842;
+  color: #000000;
 }
 
 .wrapper.style5 input[type="submit"]:hover,
@@ -3540,7 +3540,7 @@ body.is-menu-visible #menu {
   -webkit-transition: background-color 0.2s ease;
   -ms-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
-  background: #2e3842;
+  background: #000000;
   height: 3em;
   left: 0;
   line-height: 3em;
@@ -3784,7 +3784,7 @@ body.is-menu-visible #menu {
   -ms-transition-delay: 1.25s;
   transition-delay: 1.25s;
   content: "";
-  background: #2e3842;
+  background: #000000;
   display: block;
   width: 100%;
   height: 100%;
@@ -4079,7 +4079,7 @@ body.landing #page-wrapper {
 }
 
 body.landing #footer {
-  background-color: rgba(29, 36, 42, 0.9);
+  background-color: #0c0c0ce6;
 }
 
 body.is-mobile.landing #page-wrapper {
@@ -4115,4 +4115,28 @@ body.is-mobile.landing .wrapper.style4 {
 
 body.is-mobile.landing #footer {
   background-color: #1d242a;
+}
+
+/* Show on mobile only */
+
+@media screen and (max-width: 736px) {
+  .mobile {
+    display: flex;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
+/* Show on desktop only */
+
+@media screen and (min-width: 737px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+  }
 }
