@@ -3485,7 +3485,7 @@ button:disabled,
   color: inherit;
   display: block;
   font-size: 0.8em;
-  letter-spacing: 0.225em;
+  letter-spacing: 0.03rem;
   outline: 0;
   text-decoration: none;
   text-transform: uppercase;
@@ -3600,8 +3600,8 @@ body.is-menu-visible #menu {
   color: #fff;
   display: block;
   font-size: 0.8em;
-  letter-spacing: 0.225em;
-  padding: 0 1.5em;
+  letter-spacing: 0.04em;
+  padding: 0 0.6em;
   text-transform: uppercase;
 }
 
