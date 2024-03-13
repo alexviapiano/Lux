@@ -4140,3 +4140,13 @@ body.is-mobile.landing #footer {
     display: flex;
   }
 }
+
+.card {
+  min-width: 200px;
+  height: 250px;
+  border: 1px solid #fff;
+  border-width: 1px;
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
+}
